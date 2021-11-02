@@ -1,27 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     text-decoration: none;
     list-style: none;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
-body {
-    font-family: montserrat;
+:root {
+    --spray: #82ccdd;
+    --dupain: #60a3bc;
+    --goodSmartian: #3c6382;
+    --forestBlues: #0a3d62;
+    
 }
 
 nav {
     width: 100%;
     height: 80px;
-    background: #2c2c54;
+    background: var(--spray);
+    box-shadow: 0 0 10px rgb(85, 85, 85);
 }
 
 label.logo {
     font-size: 30px;
     font-weight: bold;
-    padding: 0 100px;
+    padding: 0 50px;
     color: white;
     line-height: 80px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 nav ul {
@@ -37,22 +46,23 @@ nav li {
 
 nav a {
     color: white;
-    font-size: 12px;
+    font-size: 16px;
     text-transform: uppercase;
     border: 1px solid transparent;
     padding: 7px 10px;
     border-radius: 3px;
     transition: .3s;
     letter-spacing: 1px;
+    font-weight: bold;
 }
 
-a.active {
-    border: 1px solid white;
+nav a.active {
+    border: 1px solid var(--dupain);
 }
 
-a:hover {
-    background-color: #706fd3;
-    box-shadow: 0 0 10px #706fd3, 0 0 20px #706fd3, 0 0 10px #706fd3;
+nav a:hover {
+    background-color: var(--dupain);
+    box-shadow: 0 0 10px var(--dupain), 0 0 20px var(--dupain), 0 0 10px var(--dupain);
 }
 
 nav #icon {
@@ -65,16 +75,16 @@ nav #icon {
     display: none;
 }
 
-@media (max-wwidth: 1048px) {
+@media (max-width: 1048px) {
     label.logo {
-        font-size: 32px;
+        font-size: 30px;
         padding-left: 60px;
     }
     nav ul {
         margin-right: 20px;
     }
     nav a {
-        font-size: 17px;
+        font-size: 14px;
     }
 }
 
@@ -87,7 +97,7 @@ nav #icon {
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #40407a;
+        background: var(--dupain);
         top: 80px;
         left: 0;
         text-align: center;
@@ -101,11 +111,18 @@ nav #icon {
     }
     nav a {
         font-size: 20px;
-    }
-    a.active, a:hover {
         border: none;
+    }
+    nav a.active {
+        border: solid 1px var(--spray);
+    }
+    nav a:hover {
+        border: none;
+        box-shadow: 0 0 10px var(--spray), 0 0 20px var(--spray), 0 0 10px var(--spray);
+        background-color: var(--spray);
     }
     nav ul.show {
         left: 0;
+        
     }
 }
