@@ -1,0 +1,53 @@
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Courier New', Courier, monospace;
+}
+
+body 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000000;
+}
+
+h2
+{
+    position: relative;
+    font-size: 6em;
+    color: #000000;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+
+}
+h2 span
+{
+    animation: legal 10s linear infinite
+
+}
+
+@keyframes legal 
+{
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%
+    {
+        color: rgb(3, 0, 0);
+        text-shadow: none;
+
+    }
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%
+    {
+        color: rgb(0, 0, 0);
+        text-shadow: 0 0 1000px #f0e43a,
+        0 0 20px #eb7f1b,
+        0 0 40px #e7eb0f,
+        0 0 80px #d4af09,
+        0 0 160px #e0860f,
+        0 0 400px #000000;
+
+    }
+}

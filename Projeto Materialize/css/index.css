@@ -1,0 +1,67 @@
+* {
+    font-family: roboto;
+}
+
+
+nav {
+    border-bottom: 3px solid rgb(44, 44, 44);
+    letter-spacing: 2px;
+}
+
+nav .logotype {
+    color: #B8860B !important;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+header {
+    height: 45em;
+    position: relative;
+    margin-bottom: 4em;
+    background: url(https://baristawave.com/wp-content/uploads/2021/06/cafeteria-bebida-latte-art.jpeg) no-repeat center;
+    background-size: cover;
+    z-index: -2;
+    
+    
+}
+
+
+
+header .title {
+    position: relative;
+    border-top: 3px solid #B8860B;
+    border-bottom: 3px solid #B8860B;
+    letter-spacing: 4px;
+
+}
+
+header h6{
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+    
+}
+
+section {
+    padding: 4em 0;
+}
+
+h2 {
+    margin-bottom: 1.5em;
+}
+
+@media screen and (max-width: 600px){
+    header {
+        height: 30em;
+    }
+}
