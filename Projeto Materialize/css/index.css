@@ -1,7 +1,10 @@
 * {
-    font-family: roboto;
+    font-family: Roboto;
 }
 
+h2 {
+    margin-bottom: 1.5em;
+}
 
 nav {
     border-bottom: 3px solid rgb(44, 44, 44);
@@ -17,22 +20,36 @@ nav .logotype {
 header {
     height: 45em;
     position: relative;
-    margin-bottom: 4em;
     background: url(https://baristawave.com/wp-content/uploads/2021/06/cafeteria-bebida-latte-art.jpeg) no-repeat center;
     background-size: cover;
-    z-index: -2;
-    
+    z-index: 0;   
     
 }
 
-
-
 header .title {
-    position: relative;
     border-top: 3px solid #B8860B;
     border-bottom: 3px solid #B8860B;
-    letter-spacing: 4px;
+    text-transform: uppercase;
 
+}
+
+header .title h1 {
+    margin-top: 20px;
+    font-size: 40px;
+    letter-spacing: 10px;
+}
+
+header .title h4 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 20x;
+}
+
+.descricao p {
+    font-size: 16px;
+    margin-top: 50px;
+    text-align: justify;
+    letter-spacing: 1px;
 }
 
 header h6{
@@ -52,16 +69,103 @@ header::before {
     
 }
 
+.aboutUs {
+    position: relative;
+    height: 50em;
+}
+
+.aboutUs .border {
+    margin-top: 60px;
+    border-top: 5px solid #B8860B;
+}
+
+.aboutUs .border h3 {
+    
+    font-size: 33px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.aboutUs h4 {
+
+    font-size: 25px;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px white, 0 0 10px #B8860B, 
+                0 0 20px white, 0 0 20px #B8860B, 
+                0 0 30px white, 0 0 30px #B8860B;
+                
+    color: #000000;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.aboutUs img {
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    margin-top: 30px;
+    
+}
+
+.aboutUs p {
+    font-size: 16px;
+    text-align: justify;
+    justify-content: center;
+}
+
+.aboutUs .redesSociais .btn {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.aboutUs .redesSociais i {
+    color: #212121;
+}
+
 section {
-    padding: 4em 0;
+    height: 65em;
 }
 
-h2 {
-    margin-bottom: 1.5em;
+.projetosContent {
+    border-top: 5px solid #B8860B;
 }
 
-@media screen and (max-width: 600px){
-    header {
-        height: 30em;
+.projetosContent h3 {
+    padding: 10px 10px;
+ 
+}
+
+.projetosContent img {
+    max-height: 220px;
+    max-width: 200px;
+}
+
+.card-title {
+    text-shadow: 0 0 10px white, 0 0 10px white, 0 0 20px white;
+}
+
+.card a {
+    color: #B8860B;
+}
+
+.card p {
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 600px) {
+    
+    .aboutUs{
+        height: 50em;
+    }
+    
+    section {
+        height: 115em;
     }
 }
+
+
+
+
+
