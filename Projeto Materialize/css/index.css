@@ -16,11 +16,10 @@ nav .logotype {
     font-weight: 600;
     letter-spacing: 4px;
 }
-
 header {
     height: 45em;
     position: relative;
-    background: url(https://baristawave.com/wp-content/uploads/2021/06/cafeteria-bebida-latte-art.jpeg) no-repeat center;
+    background: url(/img/background1.jpg) no-repeat center;
     background-size: cover;
     z-index: 0;   
     
@@ -71,7 +70,7 @@ header::before {
 
 .aboutUs {
     position: relative;
-    height: 50em;
+    height: 48em;
 }
 
 .aboutUs .border {
@@ -90,20 +89,15 @@ header::before {
 
     font-size: 25px;
     letter-spacing: 3px;
-    text-shadow: 0 0 10px white, 0 0 10px #B8860B, 
-                0 0 20px white, 0 0 20px #B8860B, 
-                0 0 30px white, 0 0 30px #B8860B;
-                
-    color: #000000;
+    text-shadow: 0 0 10px white, 0 0 10px white, 0 0 20px white;     
+    color: white;
     box-sizing: border-box;
     text-transform: uppercase;
     font-weight: 600;
 }
 
 .aboutUs img {
-    display: inline-block;
     width: 150px;
-    height: 100px;
     margin-top: 30px;
     
 }
@@ -123,16 +117,15 @@ header::before {
     color: #212121;
 }
 
-section {
+.projetos {
     height: 65em;
-}
-
-.projetosContent {
-    border-top: 5px solid #B8860B;
+    background: url(/img/background.jpg) no-repeat center;
+    background-size: cover;
 }
 
 .projetosContent h3 {
     padding: 10px 10px;
+    border-top: 5px solid #B8860B;
  
 }
 
@@ -154,14 +147,88 @@ section {
     letter-spacing: 1px;
 }
 
+.side .logotype {
+    color: #B8860B;
+}
+
+.menuSide a {
+    font-size: 30px;
+}
+
+.contato {
+    height: 45em;
+}
+
+.contato .title {
+    padding: 10px 10px;
+    color: white;
+    border-top: 5px solid #b8860b;
+}
+
+/* ============================= MATERIALIZE FORM CSS ============================= */
+
+/* label color */
+.contato .input-field label {
+    color: white;
+}
+
+/* label focus color */
+.contato .input-field input[type=text]:focus {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.contato .input-field input[type=tel]:focus {
+    color: white;
+}
+
+.contato .input-field input[type=email]:focus {
+    color: white;
+}
+
+.contato .input-field textarea[type=text-area]:focus {
+    color: white;
+}
+
+/* valid color */
+.contato .input-field input[type=text].valid {
+    color: white;
+    border-bottom: 1px solid #B8860B;
+    box-shadow: 0 1px 0 0 black;
+}
+
+.contato .input-field input[type=tel].valid {
+    color: white;
+    border-bottom: 1px solid #B8860B;
+    box-shadow: 0 1px 0 0 black;
+}
+
+.contato .input-field input[type=email].valid {
+    color: white;
+    border-bottom: 1px solid #B8860B;
+    box-shadow: 0 1px 0 0 black;
+}
+
+.contato .input-field textarea[type=text-area].valid {
+    color: white;
+    border-bottom: 1px solid #B8860B;
+    box-shadow: 0 1px 0 0 black;
+}
+
+.contato .input-field textarea[type=text-area].valid:focus {
+    color: white;
+    border-bottom: 1.5px solid #00ff80;
+    box-shadow: 0 1px 0 0 black;
+}
+
 @media screen and (max-width: 600px) {
     
     .aboutUs{
-        height: 50em;
+        height: 55em;
     }
     
-    section {
-        height: 115em;
+    .projetos {
+        height: 110em;
     }
 }
 

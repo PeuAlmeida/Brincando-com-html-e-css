@@ -30,11 +30,62 @@
                 <li><a href="#">Contato</a></li>
             </ul>
             <!--  Menu Responsivo  -->
-            <a href="" data-target="mobile-demo" class="sidenav-trigger right">
-                <i class="fas fa-bars"></i>
-            </a>
+            <a href="" data-target="mobile-demo" class="sidenav-trigger">
+                <i class="fas fa-bars"></i></a>
         </div>
     </nav>
+    <!--  SIDE MENU -->
+    <ul id="mobile-demo" class="sidenav grey darken-4 side">
+        <div class="user-view center-align">
+            <div class="background" style="border-bottom: 1px solid #B8860B;">
+                <img src="/img/backgroundSideBar.jpg">
+            </div>
+            <span class="logotype" style="font-size: 30px;">Logo</span>
+            <span class="white-text name" style="font-size: 20px;">Pedro Almeida</span>
+            <span class="white-text email" style="font-size: 16px;">Desenvolvedor</span>
+        </div>
+        <!--  Redes Sociais SIDE MENU-->
+        <li>
+            <a href="" class="grey-text" style="letter-spacing: 2px; font-size: 12px;">
+                <i class="fa fa-github fa-2x white-text"></i>
+                GITHUB
+            </a>
+        </li>
+        <li>
+            <a href="" class="grey-text" style="letter-spacing: 2px; font-size: 12px;">
+                <i class="fa fa-linkedin-square fa-2x white-text"></i>
+                LINKEDIN
+            </a>
+        </li>
+        <li>
+            <a href="" class="grey-text" style="letter-spacing: 2px; font-size: 12px;">
+                <i class="fa fa-instagram fa-2x white-text"></i>
+                INSTAGRAM
+            </a>
+        </li>
+        <div class="divider"></div>
+        <!--  Redes Sociais SIDE MENU-->
+        <li>
+            <a class="waves-effect grey-text" style="font-size: 18px; letter-spacing: 2px;" href="#!">
+                Inicio
+            </a>
+        </li>
+        <li>
+            <a class="waves-effect grey-text" style="font-size: 18px; letter-spacing: 2px;" href="#!">
+                Sobre mim
+            </a>
+        </li>
+        <li>
+            <a class="waves-effect grey-text" style="font-size: 18px; letter-spacing: 2px;" href="#!">
+                Projetos
+            </a>
+        </li>
+        <li>
+            <a class="waves-effect grey-text" style="font-size: 18px; letter-spacing: 2px;" href="#!">
+                Contato
+            </a>
+        </li>
+    </ul>
     <!-- ============ Inicio ============-->
     <header class="valign-wrapper white-text">
         <div class="container center-align">
@@ -57,8 +108,7 @@
     <section class="aboutUs valign-wrapper white-text grey darken-4">
         <div class="container border center-align">
             <h3>Sobre mim</h3>
-            <img src="/img/perfil.PNG"
-                class="circle responsive-img" alt="">
+            <img src="/img/perfil.PNG" class="circle responsive-img" alt="">
             <h4>Pedro Almeida</h4>
             <div class="container descricaoSobreMim">
                 <p class="grey-text">Lorem ipsum dolor sit amet consectetur adipisicing
@@ -135,6 +185,48 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section class="contato grey darken-4 valign-wrapper">
+        <div class="container center-align">
+            <h3 class="title">Contato</h3>
+            <div class="row">
+                <div class="input-field col s6">
+                    <i class="material-icons prefix white-text">account_circle</i>
+                    <input id="first_name" type="text" class="validate">
+                    <label for="first_name">Primeiro Nome</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="last_name" type="text" class="validate">
+                    <label for="last_name">Sobrenome</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix white-text">phone</i>
+                    <input id="icon-telephone" type="tel" class="validate">
+                    <label for="icon-telephone">Telefone</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix white-text">email</i>
+                    <input id="email" type="email" class="validate">
+                    <label for="email">Email</label>
+                </div>
+            </div>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix white-text">text_format</i>
+                            <textarea id="textarea1" type="text-area" class="materialize-textarea validate"></textarea>
+                            <label for="textarea1">Digite seu texto</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <a class="grey waves-effect waves-light btn-large">Enviar</a>
         </div>
     </section>
     <script src="./js/script.js"></script>
